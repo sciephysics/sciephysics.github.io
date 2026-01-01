@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "submission.html",
+    "href": "submission.html",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn’t just be an assignment—it should be a contribution to the global scientific dialogue.\nOur mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.\nEditorial Philosophy\nAcademic Rigor We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.\nApplied Creativity Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.\nCommunity Growth By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.\nOur Core Pillars\nTheoretical Articles | Advanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\nApplied Projects | Engineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\nCampus Notes | Knowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n:::\nInterested in joining our team or submitting your work? Check our Latest Research for submission guidelines."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn’t just be an assignment—it should be a contribution to the global scientific dialogue.\nOur mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.\nEditorial Philosophy\nAcademic Rigor We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.\nApplied Creativity Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.\nCommunity Growth By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.\nOur Core Pillars\nTheoretical Articles | Advanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\nApplied Projects | Engineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\nCampus Notes | Knowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n:::\nInterested in joining our team or submitting your work? Check our Latest Research for submission guidelines."
+  },
+  {
+    "objectID": "about.html#please-use-the-following-email-to-contact-science-s23439.wangstu.scie.com.cn",
+    "href": "about.html#please-use-the-following-email-to-contact-science-s23439.wangstu.scie.com.cn",
+    "title": "Finley Malloc",
+    "section": "",
+    "text": "SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn’t just be an assignment—it should be a contribution to the global scientific dialogue.\nOur mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.\nEditorial Philosophy\nAcademic Rigor We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.\nApplied Creativity Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.\nCommunity Growth By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.\nOur Core Pillars\nTheoretical Articles | Advanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\nApplied Projects | Engineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\nCampus Notes | Knowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n:::\nInterested in joining our team or submitting your work? Check our Latest Research for submission guidelines."
+  },
+  {
+    "objectID": "articles/articles.html",
+    "href": "articles/articles.html",
+    "title": "<span class='brand-text'>SCIE<span class='brand-suffix'>NCE</span></span>",
+    "section": "",
+    "text": "Martian Airfoil Design\n\n\nA Short Subtitle\n\n\n\nPhysics\n\nAerodynamics\n\n\n\nAerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n\n\n\n\n\nDec 19, 2025\n\n\nJustin\n\n\n\n\n\n\n\n\n\n\n\n\n基于 ESP32 的校园微型气象站\n\n\n\n\n\n\n工程\n\n物联网\n\n\n\n使用低功耗传感器实时监测学校操场的空气质量与温湿度，并通过 Webhook 自动推送数据。\n\n\n\n\n\nDec 15, 2025\n\n\n李四 (SCIE), 王五 (SCIE)\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/research/mars_airfoil/page/index.html#recommend",
+    "href": "articles/research/mars_airfoil/page/index.html#recommend",
+    "title": "Martian Airfoil Design",
+    "section": "Recommend",
+    "text": "Recommend\n\n\n\n\n\n\n\n\n\n\nMartian Airfoil Design\n\n\nA Short Subtitle\n\n\nAerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n\n\n\nJustin\n\n\nDec 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n基于 ESP32 的校园微型气象站\n\n\n使用低功耗传感器实时监测学校操场的空气质量与温湿度，并通过 Webhook 自动推送数据。\n\n\n\n李四 (SCIE), 王五 (SCIE)\n\n\nDec 15, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "articles/projects/weather-station/iot-weather-station.html",
+    "href": "articles/projects/weather-station/iot-weather-station.html",
+    "title": "基于 ESP32 的校园微型气象站",
+    "section": "",
+    "text": "解决学校气象数据不透明的问题，为户外社团提供参考。"
+  },
+  {
+    "objectID": "articles/projects/weather-station/iot-weather-station.html#项目目标",
+    "href": "articles/projects/weather-station/iot-weather-station.html#项目目标",
+    "title": "基于 ESP32 的校园微型气象站",
+    "section": "",
+    "text": "解决学校气象数据不透明的问题，为户外社团提供参考。"
+  },
+  {
+    "objectID": "articles/projects/weather-station/iot-weather-station.html#失败分析-critical-analysis",
+    "href": "articles/projects/weather-station/iot-weather-station.html#失败分析-critical-analysis",
+    "title": "基于 ESP32 的校园微型气象站",
+    "section": "失败分析 (Critical Analysis)",
+    "text": "失败分析 (Critical Analysis)\n在第一版原型中，我们使用了廉价的 DHT11 传感器，但在高湿度环境下（&gt;80%）数据完全漂移。最终我们更换为 BME280。"
+  },
+  {
+    "objectID": "articles/projects/weather-station/iot-weather-station.html#硬件清单",
+    "href": "articles/projects/weather-station/iot-weather-station.html#硬件清单",
+    "title": "基于 ESP32 的校园微型气象站",
+    "section": "硬件清单",
+    "text": "硬件清单\n\nESP32-DevKitC\nBME280 传感器\n太阳能充电板 (5V)\n\n查看源码"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Martian Airfoil Design",
+    "section": "",
+    "text": "Aerodynamics\n        Martian Airfoil Design\n        Aerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n        READ ARTICLE\n      \n    \n    \n    \n      \n      \n      \n        Biology\n        Programming Life at the Molecular Level\n        Refining CRISPR-Cas9 to target specific genetic sequences with precision.\n        EXPLORE PROJECT\n      \n    \n\n    \n      \n      \n      \n        Astrophysics\n        Dark Matter: The Invisible Web\n        New clues from the James Webb Space Telescope on gravitational effects.\n        LEARN MORE\n      \n    \n  \n\n  \n    \n    Previous\n  \n  \n    \n    Next\n  \n\n\nResearch / Project\n\n\n  \n    \n      Submit Your Paper\n      Share your research with our global scientific community.\n      \n        Peer Reviewed\n        Open Access\n        Rapid Publication\n      \n      SUBMIT NOW\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMartian Airfoil Design\n\n\nAerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n\n\n\n\n\nDec 19, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n基于 ESP32 的校园微型气象站\n\n\n使用低功耗传感器实时监测学校操场的空气质量与温湿度，并通过 Webhook 自动推送数据。\n\n\n\n\n\nDec 15, 2025\n\n1 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/notes.html",
+    "href": "notes/notes.html",
+    "title": "journal",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

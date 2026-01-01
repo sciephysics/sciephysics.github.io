@@ -1,0 +1,188 @@
+/* ==========================================================================
+1. HERO AREA
+========================================================================== */
+.hero-wide {
+  position: relative;
+  width: 90vw;
+  margin-left: calc(50% - 45vw);
+  height: 450px;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-bottom: 4rem;
+  background-color: #000;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(75deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+.badge-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffc107;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.btn-read {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 12px 28px;
+  border: 1.5px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-read:hover {
+  background: white;
+  color: #5F2E31;
+}
+
+/* ==========================================================================
+2. LAYOUT CONTROL (把 Listing 往左拽，给右边腾位)
+========================================================================== */
+/* 让整个内容区域占据更大的宽度，并向左靠 */
+#quarto-content {
+  max-width: 90vw !important;
+  margin-left: 5vw !important;
+}
+
+/* Listing 容器：占据左侧，留出 350px 给侧边栏 */
+.quarto-listing-container-default {
+  margin-right: 380px !important;
+  margin-left: 0 !important;
+  max-width: none !important;
+}
+
+/* 侧边栏容器：固定在右侧 */
+.sidebar-wrapper {
+  position: absolute;
+  right: 5vw;
+  top: 600px; /* 根据 Hero 高度微调 */
+  width: 320px;
+  z-index: 100;
+}
+
+.section-title-custom {
+  font-weight: 800 !important;
+  font-size: 2rem !important;
+  color: #1a1a1a !important;
+  margin: 4rem 0 2rem 0 !important;
+  border-left: 8px solid #5F2E31 !important;
+  padding-left: 1.5rem !important;
+}
+
+/* ==========================================================================
+3. LISTING POSTS (列表项细节)
+========================================================================== */
+.quarto-listing-container-default .quarto-post {
+  display: grid !important;
+  grid-template-columns: 1fr 280px !important;
+  column-gap: 3rem !important;
+  padding: 2.5rem 0 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+.quarto-listing-container-default .quarto-post .title {
+  font-weight: 800 !important;
+  font-size: 1.6rem !important;
+  color: #5F2E31 !important;
+}
+
+.quarto-listing-container-default .quarto-post .thumbnail {
+  width: 280px !important;
+  height: 180px !important;
+}
+
+/* ==========================================================================
+4. SUBMIT MODULE (侧边栏样式)
+========================================================================== */
+.submit-card {
+  background-color: #fcfcfc;
+  padding: 2.5rem;
+  border: 1px solid #eee;
+  border-top: 5px solid #5F2E31;
+  position: sticky;
+  top: 100px;
+}
+
+.submit-card h3 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.submit-benefits {
+  padding-left: 1.2rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-submit {
+  display: block;
+  text-align: center;
+  background-color: #5F2E31;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.btn-submit:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* ==========================================================================
+5. RESPONSIVE (手机端自动切回单栏)
+========================================================================== */
+@media (max-width: 1100px) {
+  .sidebar-wrapper {
+    position: static;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .quarto-listing-container-default {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .quarto-listing-container-default .quarto-post {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .quarto-listing-container-default .quarto-post .thumbnail {
+    width: 100% !important;
+    order: -1;
+  }
+}

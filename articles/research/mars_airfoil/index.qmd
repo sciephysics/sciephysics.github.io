@@ -1,0 +1,40 @@
+---
+title: "Martian Airfoil Design "
+subtitle: A Short Subtitle
+categories: [Physics, Aerodynamics]
+image: 1.png
+description: "Aerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design"
+author:
+  - name: Justin
+    email: s23439.wang@stu.scie.com.cn
+    affiliations: 
+        - id: SCIE
+          name: Shenzhen College of International Education
+
+abstract: |
+  Understanding Mar's climatic and geological history is critical for Mars exploration. Future missions will bases on the data acquired from unmanned aerial vehicles which can reach terrains inaccessible to land-base rovers. However, such scientific aerial vehicles are currently limited by the efficiency of rotor blades due to Mar's thin atmosphere, where conventional airfoils suffer from laminar separation leading to a decrease in lift and increase in drag. Sharp-leading edge airfoils are proposed as a replacement of conventional airfoil as they trigger a controlled early separation near its leading edge. This separation produces a low-pressure laminar separation bubble in a time-averaged sense and subsequent vortex roll-up. However, there lack systematic evaluation on the effect of thickness reduction on this mechanism. This study focus on one of the NASA designed and optimised airfoil, Roamx-0201. The selected airfoil will be tested under various angle of attack under different flow condition.
+keywords: 
+  - Martian Aerodynamics
+  - Martian Rotorcraft
+  - Computational Fluid Dynamics
+date: "2025-12-19"
+bibliography: bibliography.bib
+format:
+  elsevier-pdf:
+    keep-tex: true
+    journal:
+      name: Journal Name
+      formatting: preprint
+      # model: 3p # Don't set a model with preprint
+      cite-style: authoryear
+---
+# Introduction
+The Mars Helicopter Ingenuity have made history in April 2021, by becoming the first flying machine to perform a controlled flight on another planet. Though it was initially designed for only five missions, this solar-powered rotorcraft executed over 71 flights on Mars in three years, before becoming damaged on its 72th flight in 2024. The undeniable success of this rotorcraft demonstrates the capability of ultilizing unmanned aerial vehicles to conduct scientific exploration missions on other plants. The next generation of Martian rotorcraft is therefore proposed[@Young2021, @Withrow2020, @grip2025chopper]. The new generation of Mars Helicopter, currently referenced as **Chopper**, [@grip2025chopper], represents a significant leap forward in planetary exploration. It is primarily designed for executing complex scientific missions, allowing the rotorcraft to access previously unreachable geological terrains. By doing so, it will provide close-up landscape imagery and collect high-resolution climatic data from critical locations. However, the heavy mass of the necessary scientific instruments currently imposes a strict limit on the vehicle's total payload and thus restricts the scope of these missions. 
+
+![An overview categorizing the Mach and Reynolds number regimes within which various aerospace articles operate @leishman2023introduction. A chart illustrating the flight airspeed...](Figures/ReMachUnification.png){#fig-ReMachUnification width="100%"}
+
+Ingenuity was integrated with a conventional airfoil, CLF5605[@caros2025computational, @zhang2024aerodynamic, @koning2024experimental], which however had limited performance under Martian atmospheric condition. Because the Martian atmosphere contains more than 95\% CO2 and maintains a low mean temperature (approximately $-61^\circ\text{C}$), the planet exhibits flight conditions characterized by a significantly elevated Mach number ($M = V/\sqrt{\gamma R T}$). The significantly lower density of the Martian atmosphere—roughly 1\% that of Earth's—is the principal factor responsible for the low Reynolds number ($Re = \frac{\rho u L}{\mu}$) experienced on the planet. The Reynolds number and Mach number on Mars result in a very different flow condition to Earth's, as demonstrated in Figure \ref{fig:ReMachUnification}. Mars flow condition has a lower range of Reynolds number and Mach number in general($10^3 \leq Re\leq 10^4$ and $0.2\leq Ma \leq 1.0$). With the same Reynolds number condition, Mars have a higher Mach number compared to that of Earth's. Therefore, conventional airfoil on Martian atmosphere experiences a performance drop due to a mechanism called laminar separation bubble[@grip2025chopper, @giacomini2024rotorcraft]. Laminar separation occurs when the adverse pressure gradient exceeds the strength of the boundary layer of a laminar flow at the surface of airfoils. The flow separates permanently and transitions into turbulent flow, creating small eddies with large kinetic energy. Turbulent flow change the pressure distribution along the airfoil resulting in large increase in drag, harming the aerodynamic performance. However, recent research[@Munday2015Nonlinear, @Caros2023, @caros2025effects, @Koning2019Airfoil, @koning2020optimization, @koning2018low, @Koning2024ELISA] have looked into methods of reducing the negative impact of laminar separation bubble by employing sharp-leading edge unconventional airfoil. Their research have shown, the sharp-leading edge geometries are able to trigger a low-pressure laminar bubble separation in a time-averaged sense leading to a flow re-attachment on the airfoil downstream, creating a low pressure region at the upper surface of an airfoil. 
+
+Koning et al. [@Koning2019Airfoil] catagorized airfoils into five major types, among which cambered and corrugated airfoils are to our particular interests as they are able to trigger an early laminar separation bubble which causes flow to re-attach downstream. Triangular airfoil[@caros2022direct, @Caros2023, @caros2025effects] has also demonstrated similar improved lift mechanism. Koning has identified two airfoils Roamx-0201 and Roamx-1301 using optimisation algorithms[@Koning2024ELISA] through a typical flow condition on Mars at Re=20,000 and M=0.6. These designs exhibits high lift-to-drag ratio under Martian atmosphere. However, it lacks robust explanation and systematic evaluation how this early-separation and re-attachment mechanism are supported by the sharp-leading edge of airfoils. 
+
+In this study, we will focus on the effect of thickness reduction in shaping the aerodynamic behaviour of airfoil. We hypothesise that a sharper leading edge will contribute to a more controlled unsteady laminar separation bubble in a time-averaged sense, leading to a higher lift-to-drag ratio of airfoil and a better stability during change in flow conditions of airfoil. To test this, we will take Roamx-0201 and we will test it under various angle of attack($0\leq\alpha\leq6$ at three different flow conditions corresponding to different sections of rotor blades: Re = 3,000, M = 0.15; Re = 10,000, M = 0.3; Re = 20,000, M = 0.6. Simulations are conducted using PyFR[@PyFR], which implements a class of numerical schemes that apply high-order precision to unstructured meshes. 

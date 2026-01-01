@@ -1,0 +1,43 @@
+---
+title: "Finley Malloc"
+about:
+  id: hero-heading
+  template: solana
+  image: Weixin Image_2025-12-19_171835_041.jpg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+
+
+SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn't just be an assignment—it should be a contribution to the global scientific dialogue.
+
+Our mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.
+
+Editorial Philosophy
+
+Academic Rigor
+We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.
+
+Applied Creativity
+Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.
+
+Community Growth
+By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.
+
+Our Core Pillars
+
+Theoretical Articles | Advanced Insights
+Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.
+
+Applied Projects | Engineering & Innovation
+Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.
+
+Campus Notes | Knowledge Sharing
+Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.
+
+:::
+
+Interested in joining our team or submitting your work? Check our Latest Research for submission guidelines.

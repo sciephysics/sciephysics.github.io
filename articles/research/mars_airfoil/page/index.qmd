@@ -1,0 +1,34 @@
+---
+title: "Martian Airfoil Design "
+subtitle: A Short Subtitle
+categories: [Physics, Aerodynamics]
+image: 1.png
+description: "Aerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design"
+author: 
+  - name: Justin
+    email: s23439.wang@stu.scie.com.cn
+    affiliations: 
+        - id: SCIE
+          name: Shenzhen College of International Education
+
+date: "2025-12-19"
+listing:
+  id: recommended-links
+  contents: "../../../*/*/*.qmd"
+  type: grid
+  max-items: 3
+  grid-columns: 3
+  fields: [image, title, subtitle, description, date, author] # 对应你图片里的元素
+  image-height: "150px"
+---
+<iframe 
+  src="../index.pdf" 
+  width="100%" 
+  height="800px" 
+  style="border: none;">
+</iframe>
+
+## Recommend
+
+::: {#recommended-links}
+:::

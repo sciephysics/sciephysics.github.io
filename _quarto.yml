@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "<span class='brand-text'>SCIE<span class='brand-suffix'>NCE</span></span>"
+  #description: "An open-access science magazine for students."
+  navbar:
+    background: "#5F2E31"  # 你的品牌色
+    type: dark
+    #logo: "Gemini_Generated_Image_ylpupvylpupvylpu.png"  
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+    right:
+      - href: articles/articles.qmd
+        text: Articles
+      - text: "About"
+        href: about.qmd
+      - href: submission.qmd
+        text: Submission      #//------ Campus Notes tab removed --------//
+  page-footer:
+    center: 
+      - text: "© 2025 SCIE(NCE)| By students, for students"
+        href: about.qmd
+
+
+format:
+  html:
+    theme: 
+      - cosmo
+    css: styles.css
+    mainfont: "Inter, system-ui, sans-serif" # 使用更现代的无衬线字体
+    fontsize: "0.95rem"
+    toc: false # 首页通常不需要目录，浪费空间
+
+
+

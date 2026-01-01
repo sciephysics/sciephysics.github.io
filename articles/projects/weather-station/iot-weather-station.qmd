@@ -1,0 +1,21 @@
+---
+title: "基于 ESP32 的校园微型气象站"
+author: "李四 (SCIE), 王五 (SCIE)"
+date: "2025-12-15"
+categories: [工程, 物联网]
+image: 1.jpg
+description: "使用低功耗传感器实时监测学校操场的空气质量与温湿度，并通过 Webhook 自动推送数据。"
+---
+
+## 项目目标
+解决学校气象数据不透明的问题，为户外社团提供参考。
+
+## 失败分析 (Critical Analysis)
+在第一版原型中，我们使用了廉价的 DHT11 传感器，但在高湿度环境下（>80%）数据完全漂移。最终我们更换为 **BME280**。
+
+## 硬件清单
+- ESP32-DevKitC
+- BME280 传感器
+- 太阳能充电板 (5V)
+
+[查看源码](https://github.com/example/weather-station)

@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  
+  #description: "An open-access science magazine for students."
+  navbar:
+    background: "#5F2E31"  # 你的品牌色
+    #logo: "Gemini_Generated_Image_ylpupvylpupvylpu.png"  
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+    right:
+      - href: articles/articles.qmd
+        text: Articles
+      - href: notes/notes.qmd
+        text: Campus Notes
+      - text: "About"
+        href: about.qmd
+      - href: Submission.qmd
+        text: Submission
+  page-footer:
+    center: "© 2025 SCIE(NCE)| By students, for students"
+
+
+format:
+  html:
+    theme: 
+      - cosmo
+    css: _articles.css
+    mainfont: "Inter, system-ui, sans-serif" # 使用更现代的无衬线字体
+    fontsize: "0.95rem"
+    toc: false # 首页通常不需要目录，浪费空间
+ 
+
+

@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/articles/articles.html",
+    "items": [
+      "/articles/research/mars_airfoil/page/index.html",
+      "/articles/projects/weather-station/iot-weather-station.html"
+    ]
+  },
+  {
+    "listing": "/articles/research/mars_airfoil/page/index.html",
+    "items": [
+      "/articles/research/mars_airfoil/index.pdf",
+      "/articles/projects/weather-station/iot-weather-station.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/articles/research/mars_airfoil/page/index.html",
+      "/articles/projects/weather-station/iot-weather-station.html"
+    ]
+  }
+]

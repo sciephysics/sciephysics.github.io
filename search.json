@@ -32,7 +32,7 @@
     "href": "submission.html#submission-guidance",
     "title": "Guideline",
     "section": "Submission guidance",
-    "text": "Submission guidance\n\nExpectations: suggest target lengths (e.g., short notes 500–1500 words; full articles 2,000–6,000 words) and whether a submission will undergo peer review.\nReproducibility: include data, code, and a short README or runnable notebook when relevant.\nFormats: we accept QMD/Markdown, LaTeX/PDF manuscripts, figures, and supplementary archives. For software or data, include a stable repository link (e.g., GitHub, Zenodo) and a license.\n\nIf you’d like, I can insert a shorter variant of this text into submission.qmd, adjust tone, or add explicit length and review-policy details."
+    "text": "Submission guidance\n\nExpectations: suggest target lengths (e.g., short notes 500–1500 words; full articles 2,000–6,000 words) and whether a submission will undergo peer review.\nReproducibility: include data, code, and a short README or runnable notebook when relevant.\nFormats: we accept QMD/Markdown, LaTeX/PDF manuscripts, figures, and supplementary archives. For software or data, include a stable repository link (e.g., GitHub, Zenodo) and a license."
   },
   {
     "objectID": "about.html",

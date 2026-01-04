@@ -2,23 +2,44 @@
   {
     "objectID": "submission.html",
     "href": "submission.html",
-    "title": "Finley Malloc",
+    "title": "Guideline",
     "section": "",
-    "text": "SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn’t just be an assignment—it should be a contribution to the global scientific dialogue.\nOur mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.\nEditorial Philosophy\nAcademic Rigor We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.\nApplied Creativity Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.\nCommunity Growth By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.\nOur Core Pillars\nTheoretical Articles | Advanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\nApplied Projects | Engineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\nCampus Notes | Knowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n:::\nInterested in joining our team or submitting your work? Check our Latest Research for submission guidelines."
+    "text": "Hello and welcome — we’re delighted you’re considering submitting to SCIE(NCE)! We accept a wide range of article types across Physics, Chemistry, Biology, Mathematics, Computer Science, and related areas. Submissions can include:\nWe bring students together across campuses, cities, and countries to share projects, learn collaboratively, and encourage emerging investigators who are excited to explore new fields."
+  },
+  {
+    "objectID": "submission.html#researchproject",
+    "href": "submission.html#researchproject",
+    "title": "Guideline",
+    "section": "Research/Project",
+    "text": "Research/Project\nThese are engineering- or experiment-based submissions. We look for:\n\nProblem-solving projects that address a clear niche (e.g., “A Low-Cost Mesh Network for Campus Emergency Alerts”).\nFailure analyses and negative results that include data and lessons learned.\nReproducibility: documentation, materials, and files sufficient for others to reproduce the work."
+  },
+  {
+    "objectID": "submission.html#theories",
+    "href": "submission.html#theories",
+    "title": "Guideline",
+    "section": "Theories",
+    "text": "Theories\nFor theoretical work, focus on clear exposition of the idea, motivation, and implications. We welcome conceptual advances even without experimental validation; include illustrative calculations, simulations, or suggested tests when possible."
+  },
+  {
+    "objectID": "submission.html#other-accepted-formats",
+    "href": "submission.html#other-accepted-formats",
+    "title": "Guideline",
+    "section": "Other accepted formats",
+    "text": "Other accepted formats\n\nReviews: concise overviews that synthesize literature and highlight open problems.\nTutorials / How‑To Guides: step-by-step introductions, ideally with code or notebooks.\nSoftware / Tools: descriptions of code, libraries, or tools with repository links and usage examples.\nData Descriptors / Datasets: curated datasets with metadata and reuse guidance.\nMethods / Protocols: detailed procedures others can reproduce.\nShort Communications: brief reports of a single important result or technique.\nReplication / Negative Results: repeat studies and well-documented null/negative outcomes.\nPerspectives / Opinion Pieces: informed commentary on directions, ethics, or trends.\nTeaching Resources: classroom-ready exercises or lab instructions.\nVisual Essays: illustrated explanations or infographics with captions and data."
+  },
+  {
+    "objectID": "submission.html#submission-guidance",
+    "href": "submission.html#submission-guidance",
+    "title": "Guideline",
+    "section": "Submission guidance",
+    "text": "Submission guidance\n\nExpectations: suggest target lengths (e.g., short notes 500–1500 words; full articles 2,000–6,000 words) and whether a submission will undergo peer review.\nReproducibility: include data, code, and a short README or runnable notebook when relevant.\nFormats: we accept QMD/Markdown, LaTeX/PDF manuscripts, figures, and supplementary archives. For software or data, include a stable repository link (e.g., GitHub, Zenodo) and a license.\n\nIf you’d like, I can insert a shorter variant of this text into submission.qmd, adjust tone, or add explicit length and review-policy details."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Finley Malloc",
+    "title": "Our Story",
     "section": "",
-    "text": "SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn’t just be an assignment—it should be a contribution to the global scientific dialogue.\nOur mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.\nEditorial Philosophy\nAcademic Rigor We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.\nApplied Creativity Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.\nCommunity Growth By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.\nOur Core Pillars\nTheoretical Articles | Advanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\nApplied Projects | Engineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\nCampus Notes | Knowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n:::\nInterested in joining our team or submitting your work? Check our Latest Research for submission guidelines."
-  },
-  {
-    "objectID": "about.html#please-use-the-following-email-to-contact-science-s23439.wangstu.scie.com.cn",
-    "href": "about.html#please-use-the-following-email-to-contact-science-s23439.wangstu.scie.com.cn",
-    "title": "Finley Malloc",
-    "section": "",
-    "text": "SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery. We believe that student research shouldn’t just be an assignment—it should be a contribution to the global scientific dialogue.\nOur mission is to provide a rigorous yet accessible space where theoretical depth meets practical application, fostering a community of young researchers who are as comfortable with complex equations as they are with soldering irons.\nEditorial Philosophy\nAcademic Rigor We maintain a standard of excellence in our peer-reviewed articles, ensuring that advanced theoretical shares are both accurate and insightful.\nApplied Creativity Science is not a spectator sport. We prioritize projects that demonstrate hands-on engineering, data analysis, and experimental design.\nCommunity Growth By sharing high-quality course notes and academic resources, we aim to lower the barrier to entry for complex STEM subjects within our campus and beyond.\nOur Core Pillars\nTheoretical Articles | Advanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\nApplied Projects | Engineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\nCampus Notes | Knowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n:::\nInterested in joining our team or submitting your work? Check our Latest Research for submission guidelines."
+    "text": "SCIE\n  \n\n      \n\nContact\nPlease use the following email to contact SCIE(NCE): s23439.wang@stu.scie.com.cn\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\nOur Core Pillars\n\n\n\nTheoretical Articles\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\nApplied Projects\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\nCampus Notes\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
   },
   {
     "objectID": "articles/articles.html",

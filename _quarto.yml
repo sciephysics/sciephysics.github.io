@@ -21,7 +21,7 @@ website:
         text: Submission      #//------ Campus Notes tab removed --------//
   page-footer:
     center: 
-      - text: "© 2025-2026 SCIE(NCE)| By students, for students"
+      - text: "© 2025-2026 κύανος| By students, for students"
         href: about.qmd
 
 

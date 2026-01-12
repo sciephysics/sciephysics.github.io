@@ -33,16 +33,7 @@ For theoretical work, focus on clear exposition of the idea, motivation, and imp
 
 ## Other accepted formats
 
-- **Reviews:** concise overviews that synthesize literature and highlight open problems.
-- **Tutorials / How‑To Guides:** step-by-step introductions, ideally with code or notebooks.
-- **Software / Tools:** descriptions of code, libraries, or tools with repository links and usage examples.
-- **Data Descriptors / Datasets:** curated datasets with metadata and reuse guidance.
-- **Methods / Protocols:** detailed procedures others can reproduce.
-- **Short Communications:** brief reports of a single important result or technique.
-- **Replication / Negative Results:** repeat studies and well-documented null/negative outcomes.
-- **Perspectives / Opinion Pieces:** informed commentary on directions, ethics, or trends.
-- **Teaching Resources:** classroom-ready exercises or lab instructions.
-- **Visual Essays:** illustrated explanations or infographics with captions and data.
+For other accepted genre, we feel we do not have anything to add, but if you have any questions, [feel free to reach out to us](about.qmd)
 
 ## Submission guidance
 

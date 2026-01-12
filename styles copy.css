@@ -67,19 +67,24 @@
 }
 
 /* ==========================================================================
-2. LAYOUT CONTROL
+2. LAYOUT CONTROL (把 Listing 往左拽，给右边腾位)
 ========================================================================== */
+/* 主目录全局 CSS - 布局模块优化版 */
+
+/* 只有非文章页才执行这个 90vw 的布局 */
 body:not(.article-listing-page) #quarto-content {
   max-width: 90vw !important;
   margin-left: 5vw !important;
 }
 
+/* 只有非文章页才执行这个强制留白 */
 body:not(.article-listing-page) .quarto-listing-container-default {
   margin-right: 380px !important;
   margin-left: 0 !important;
   max-width: none !important;
 }
 
+/* 侧边栏：仅在非文章页绝对定位 */
 body:not(.article-listing-page) .sidebar-wrapper {
   position: absolute;
   right: 5vw;
@@ -88,6 +93,7 @@ body:not(.article-listing-page) .sidebar-wrapper {
   z-index: 100;
 }
 
+/* 全局标题样式排除 */
 body:not(.article-listing-page) .section-title-custom {
   font-weight: 800 !important;
   font-size: 2rem !important;
@@ -98,8 +104,11 @@ body:not(.article-listing-page) .section-title-custom {
 }
 
 /* ==========================================================================
-3. LISTING POSTS
+3. LISTING POSTS (列表项细节)
 ========================================================================== */
+/* 主目录全局 CSS - 优化版 */
+
+/* 只有当页面 body 不包含 .article-listing-page 类时，才应用这个全局列表样式 */
 body:not(.article-listing-page) .quarto-listing-container-default .quarto-post {
   display: grid; 
   grid-template-columns: 1fr 280px;
@@ -121,6 +130,7 @@ body:not(.article-listing-page) .quarto-listing-container-default .quarto-post .
   object-fit: cover;
 }
 
+/* 兜底逻辑：如果某些地方必须用到 !important，也请限制在非特定页面的范围内 */
 body:not(.article-listing-page) .quarto-listing-container-default .quarto-post .thumbnail img {
   width: 100% !important;
   height: 100% !important;
@@ -128,7 +138,7 @@ body:not(.article-listing-page) .quarto-listing-container-default .quarto-post .
 }
 
 /* ==========================================================================
-4. SUBMIT MODULE
+4. SUBMIT MODULE (侧边栏样式)
 ========================================================================== */
 .submit-card {
   background-color: #fcfcfc;
@@ -168,72 +178,7 @@ body:not(.article-listing-page) .quarto-listing-container-default .quarto-post .
 }
 
 /* ==========================================================================
-5. NAVBAR & BRANDING (NEW MASTHEAD STYLE)
-========================================================================= */
-.navbar {
-  padding: 0.8rem 2.5rem !important;
-  background-color: #5F2E31 !important;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2) !important;
-}
-
-.navbar-brand {
-  /* Using a serif font for the logo makes it feel like a classic journal */
-  font-family: "Times New Roman", Times, serif !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-.brand-masthead {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  font-size: 1.6rem !important;
-  letter-spacing: 4px !important; /* Elegant spacing for Greek characters */
-  position: relative;
-  padding-bottom: 2px;
-}
-
-/* Subtle underline decoration for the brand */
-.brand-masthead::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 40%;
-  height: 2px;
-  background-color: #ffc107; /* Golden accent from your hero area */
-}
-
-.navbar-nav .nav-link {
-  font-family: "Inter", sans-serif !important;
-  font-size: 0.85rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px;
-  text-transform: uppercase !important; /* Matches the formal masthead */
-  color: rgba(255, 255, 255, 0.75) !important;
-  margin: 0 1rem !important;
-  transition: 0.2s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ffffff !important;
-  transform: translateY(-1px);
-}
-
-/* Submission Button - Clean & Sharp */
-.navbar-nav .nav-item:last-child .nav-link {
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
-  padding: 0.4rem 1.2rem !important;
-  background: transparent !important;
-  margin-left: 1.5rem !important;
-}
-
-.navbar-nav .nav-item:last-child .nav-link:hover {
-  background: #ffffff !important;
-  color: #5F2E31 !important;
-}
-
-/* ==========================================================================
-6. RESPONSIVE
+5. RESPONSIVE (手机端自动切回单栏)
 ========================================================================== */
 @media (max-width: 1100px) {
   .sidebar-wrapper {
@@ -254,7 +199,101 @@ body:not(.article-listing-page) .quarto-listing-container-default .quarto-post .
   .quarto-listing-container-default .quarto-post .thumbnail {
     width: 100% !important;
     order: -1;
-    margin-bottom: 1.5rem;
   }
-  .brand-masthead { font-size: 1.3rem !important; letter-spacing: 2px !important; }
+}
+
+
+/* ==========================================================================
+nvbar STYLES FOR ARTICLE LISTING PAGE
+========================================================================== */
+/* ==========================================================================
+   Integrated Identity - SCIE(NCE) 2025 Refined (Alignment Fixed)
+   ========================================================================== */
+
+/* 1. 导航栏整体：保留你的压缩高度和颜色 */
+.navbar {
+  padding: 0.5rem 2rem !important;
+  background-color: #5F2E31 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  /* 新增：确保整个导航栏内部元素垂直居中 */
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 2. 标题 Logo 设计：完全保留你的样式 */
+.navbar-brand {
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.3rem !important;
+  letter-spacing: -0.01em !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.brand-text {
+  color: #ffffff !important;
+  font-weight: 750 !important;
+}
+
+.brand-suffix {
+  color: rgba(255, 255, 255, 0.45) !important;
+  font-weight: 500 !important;
+  margin-left: 0.1rem;
+}
+
+/* 3. 导航项对齐修正：Articles, About 与 Submission 对齐 */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important; /* 核心修正：强制所有子项中轴对齐 */
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-transform: none !important;
+  margin: 0 0.8rem !important;
+  /* 修正：取消 top padding，改用 flex 居中确保 baseline 一致 */
+  padding: 0 !important; 
+  display: flex !important;
+  align-items: center !important;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* 4. Submission 按钮：保留你的极简高亮样式 */
+.navbar-nav .nav-item:last-child .nav-link {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  padding: 0.4rem 1rem !important; /* 这里的 padding 会撑开背景，但不会影响文字对齐 */
+  border-radius: 6px !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  margin-left: 0.5rem !important;
+}
+
+.navbar-nav .nav-item:last-child .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 5. 搜索框与工具：同步居中 */
+.navbar .quarto-navigation-tool, 
+#quarto-search {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 1rem;
+}
+
+.navbar .input-group {
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 适配移动端 */
+@media (max-width: 768px) {
+  .navbar-brand { font-size: 1.1rem !important; }
 }

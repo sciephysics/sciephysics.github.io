@@ -25,7 +25,7 @@
     "href": "submission.html#other-accepted-formats",
     "title": "Guideline",
     "section": "Other accepted formats",
-    "text": "Other accepted formats\n\nReviews: concise overviews that synthesize literature and highlight open problems.\nTutorials / How‑To Guides: step-by-step introductions, ideally with code or notebooks.\nSoftware / Tools: descriptions of code, libraries, or tools with repository links and usage examples.\nData Descriptors / Datasets: curated datasets with metadata and reuse guidance.\nMethods / Protocols: detailed procedures others can reproduce.\nShort Communications: brief reports of a single important result or technique.\nReplication / Negative Results: repeat studies and well-documented null/negative outcomes.\nPerspectives / Opinion Pieces: informed commentary on directions, ethics, or trends.\nTeaching Resources: classroom-ready exercises or lab instructions.\nVisual Essays: illustrated explanations or infographics with captions and data."
+    "text": "Other accepted formats\nFor other accepted genre, we feel we do not have anything to add, but if you have any questions, feel free to reach out to us"
   },
   {
     "objectID": "submission.html#submission-guidance",
@@ -39,12 +39,12 @@
     "href": "about.html",
     "title": "Our Story",
     "section": "",
-    "text": "SCIE\n  \n\n      \n\nContact\nPlease use the following email to contact SCIE(NCE): s23439.wang@stu.scie.com.cn\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\nOur Core Pillars\n\n\n\nTheoretical Articles\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\nApplied Projects\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\nCampus Notes\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
+    "text": "SCIE\n  \n\n      \n\nContact\nPlease use the following email to contact SCIE(NCE): contact@kyanos.pub\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\nOur Core Pillars\n\n\n\nTheoretical Articles\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\nApplied Projects\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\nCampus Notes\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
   },
   {
     "objectID": "articles/articles.html",
     "href": "articles/articles.html",
-    "title": "<span class='brand-text'>SCIE<span class='brand-suffix'>NCE</span></span>",
+    "title": "<span class='brand-masthead'>ΚΥΑΝΟΣ</span>",
     "section": "",
     "text": "Martian Airfoil Design\n\n\nA Short Subtitle\n\n\n\nPhysics\n\nAerodynamics\n\n\n\nAerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n\n\n\n\n\nDec 19, 2025\n\n\nJustin\n\n\n\n\n\n\n\n\n\n\n\n\n基于 ESP32 的校园微型气象站\n\n\n\n\n\n\n工程\n\n物联网\n\n\n\n使用低功耗传感器实时监测学校操场的空气质量与温湿度，并通过 Webhook 自动推送数据。\n\n\n\n\n\nDec 15, 2025\n\n\n李四 (SCIE), 王五 (SCIE)\n\n\n\n\n\nNo matching items"
   },

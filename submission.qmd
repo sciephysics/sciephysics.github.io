@@ -6,16 +6,16 @@ about:
   image: Weixin Image_2025-12-19_171835_041.jpg
 
 ---
-Hello and welcome — we're delighted you're considering submitting to SCIE(NCE)! We accept a wide range of article types across Physics, Chemistry, Biology, Mathematics, Computer Science, and related areas. Submissions can include:
+Hello and welcome — we're delighted you're considering submitting to Kyanos! We accept a wide range of article types across Physics, Chemistry, Biology, Mathematics, Computer Science, and related areas. Submissions can include:
 
 1. Formal research papers
 2. Short or summarized research papers that highlight a single insight
-3. Theoretical papers or idea sketches(Beyond IGCSE, Alevel, AP or IB syllabus; For physics, encouraged to be mathematical based)
-4. Project reports (designs or experiments)
-5. Engineering projects
-6. Mathematical modelling studies
+3. Mathematical modelling studies
+4. Theoretical papers or idea sketches(Beyond IGCSE, Alevel, AP or IB syllabus; For physics, encouraged to be mathematical based)
+5. Project reports (designs or experiments)
+6. Engineering projects
 7. Programming or software projects
-8. Anything that involves research, experiment or application- if you have any other ideas, please contact [SCIE(NCE)](about.qmd), we'll get in touch with you as soon as possible. 
+8. Anything that involves research, experiment or application- if you have any other ideas, please contact [Kyanos](about.qmd), we'll get in touch with you as soon as possible. 
 
 We bring students together across campuses, cities, and countries to share projects, learn collaboratively, and encourage emerging investigators who are excited to explore new fields.
 

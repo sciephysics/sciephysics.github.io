@@ -170,26 +170,73 @@ body:not(.article-listing-page) .quarto-listing-container-default .quarto-post .
 /* ==========================================================================
 5. NAVBAR & BRANDING (NEW MASTHEAD STYLE)
 ========================================================================= */
+/* ==========================================================================
+5. NAVBAR & BRANDING (REVISED FOR PLAIN TEXT TITLE)
+========================================================================= */
 .navbar {
   padding: 0.8rem 2.5rem !important;
   background-color: #5F2E31 !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2) !important;
 }
 
+/* 针对外层链接容器 */
 .navbar-brand {
-  /* Using a serif font for the logo makes it feel like a classic journal */
-  font-family: "Times New Roman", Times, serif !important;
   display: flex !important;
   align-items: center !important;
+  text-decoration: none !important;
 }
 
-.brand-masthead {
+/* 针对 Quarto 生成的纯文本标题容器 */
+.navbar-title {
+  /* 核心样式：继承自原 .brand-masthead */
+  font-family: "Times New Roman", Times, serif !important;
   color: #ffffff !important;
   font-weight: 700 !important;
   font-size: 1.6rem !important;
-  letter-spacing: 4px !important; /* Elegant spacing for Greek characters */
+  letter-spacing: 4px !important; /* 保持优雅的间距 */
   position: relative;
   padding-bottom: 2px;
+  text-transform: uppercase; /* 强制大写，确保视觉一致性 */
+}
+
+/* 之前的金色下划线装饰，现在挂载到 .navbar-title 上 */
+.navbar-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 2px;
+  background-color: #ffc107; /* 来自 Hero Area 的金色 */
+}
+
+.navbar-nav .nav-link {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin: 0 1rem !important;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* 提交按钮样式保持不变 */
+.navbar-nav .nav-item:last-child .nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  padding: 0.4rem 1.2rem !important;
+  background: transparent !important;
+  margin-left: 1.5rem !important;
+}
+
+.navbar-nav .nav-item:last-child .nav-link:hover {
+  background: #ffffff !important;
+  color: #5F2E31 !important;
 }
 
 /* Subtle underline decoration for the brand */

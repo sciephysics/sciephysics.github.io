@@ -1,1 +1,1 @@
-Sitemap: git@github-scie:sciephysics/sciephysics.github.io.git/sitemap.xml
+Sitemap: https:kyanos.pub/sitemap.xml

@@ -1,1 +1,1 @@
-Sitemap: https:kyanos.pub/sitemap.xml
+Sitemap: https://kyanos.pub/sitemap.xml

@@ -39,7 +39,14 @@
     "href": "about.html",
     "title": "Our Story",
     "section": "",
-    "text": "SCIE\n  \n\n      \n\nContact\nPlease use the following email to contact SCIE(NCE): contact@kyanos.pub\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\nOur Core Pillars\n\n\n\nTheoretical Articles\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\nApplied Projects\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\nCampus Notes\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
+    "text": "SCIE\n  \n\n      \n\n\nPlease use the following email to contact SCIE(NCE): contact@kyanos.pub\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\n\n\n\n\n\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\n\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\n\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "Our Story",
+    "section": "",
+    "text": "Please use the following email to contact SCIE(NCE): contact@kyanos.pub\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\n\n\n\n\n\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\n\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\n\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
   },
   {
     "objectID": "articles/articles.html",
@@ -86,7 +93,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Martian Airfoil Design",
+    "title": "Kyanos",
     "section": "",
     "text": "Aerodynamics\n        Martian Airfoil Design\n        Aerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n        READ ARTICLE\n      \n    \n    \n    \n      \n      \n      \n        Biology\n        Programming Life at the Molecular Level\n        Refining CRISPR-Cas9 to target specific genetic sequences with precision.\n        EXPLORE PROJECT\n      \n    \n\n    \n      \n      \n      \n        Astrophysics\n        Dark Matter: The Invisible Web\n        New clues from the James Webb Space Telescope on gravitational effects.\n        LEARN MORE\n      \n    \n  \n\n  \n    \n    Previous\n  \n  \n    \n    Next\n  \n\n\nResearch / Project\n\n\n  \n    \n      Submit Your Paper\n      Share your research with our global scientific community.\n      \n        Peer Reviewed\n        Open Access\n        Rapid Publication\n      \n      SUBMIT NOW\n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMartian Airfoil Design\n\n\nAerodynamics at Low Reynolds Numbers: Overcoming Martian Atmospheric Constraints via DNS-Driven Design\n\n\n\n\n\nDec 19, 2025\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n基于 ESP32 的校园微型气象站\n\n\n使用低功耗传感器实时监测学校操场的空气质量与温湿度，并通过 Webhook 自动推送数据。\n\n\n\n\n\nDec 15, 2025\n\n1 min\n\n\n\n\nNo matching items"
   },

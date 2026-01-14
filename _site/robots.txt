@@ -1,1 +1,4 @@
-Sitemap: https:kyanos.pub/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://kyanos.pub/sitemap.xml

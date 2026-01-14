@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# 指定 Sitemap 位置，方便谷歌爬虫找到
 Sitemap: https://kyanos.pub/sitemap.xml

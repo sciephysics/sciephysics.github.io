@@ -3,8 +3,7 @@ project:
 
 website:
   title: "Kyanos"
-  description: "Kyanos (ΚΥΑΝΟΣ) - An open-access journal by and for high school students."
-  site-url: "https:kyanos.pub"
+  site-url: "https://kyanos.pub"
   navbar:
     background: "#5F2E31"  # 你的品牌色
     type: dark

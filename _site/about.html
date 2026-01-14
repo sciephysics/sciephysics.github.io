@@ -142,8 +142,8 @@ ul.task-list li input[type="checkbox"] {
   </a>
 </div>
       <div class="about-contents"><div id="hero-heading">
-<section id="contact" class="level1">
-<h1>Contact</h1>
+<section id="contact" class="level2">
+<h2 data-anchor-id="contact">Contact</h2>
 <p><strong>Please use the following email to contact SCIE(NCE):</strong> <code>contact@kyanos.pub</code></p>
 <p><em>SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.</em></p>
 <section id="our-core-pillars" class="level3">
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:kyanos\.pub");
+        var filterRegex = new RegExp("https:\/\/kyanos\.pub");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

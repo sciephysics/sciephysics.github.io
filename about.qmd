@@ -15,7 +15,7 @@ format:
 ---
 :::{#hero-heading}
 
-# Contact
+## Contact
 **Please use the following email to contact SCIE(NCE):** `contact@kyanos.pub`
 
 *SCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.*

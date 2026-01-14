@@ -28,7 +28,7 @@ format:
       # model: 3p # Don't set a model with preprint
       cite-style: authoryear
 ---
-# Introduction
+## Introduction
 The Mars Helicopter Ingenuity have made history in April 2021, by becoming the first flying machine to perform a controlled flight on another planet. Though it was initially designed for only five missions, this solar-powered rotorcraft executed over 71 flights on Mars in three years, before becoming damaged on its 72th flight in 2024. The undeniable success of this rotorcraft demonstrates the capability of ultilizing unmanned aerial vehicles to conduct scientific exploration missions on other plants. The next generation of Martian rotorcraft is therefore proposed[@Young2021, @Withrow2020, @grip2025chopper]. The new generation of Mars Helicopter, currently referenced as **Chopper**, [@grip2025chopper], represents a significant leap forward in planetary exploration. It is primarily designed for executing complex scientific missions, allowing the rotorcraft to access previously unreachable geological terrains. By doing so, it will provide close-up landscape imagery and collect high-resolution climatic data from critical locations. However, the heavy mass of the necessary scientific instruments currently imposes a strict limit on the vehicle's total payload and thus restricts the scope of these missions. 
 
 ![An overview categorizing the Mach and Reynolds number regimes within which various aerospace articles operate @leishman2023introduction. A chart illustrating the flight airspeed...](Figures/ReMachUnification.png){#fig-ReMachUnification width="100%"}

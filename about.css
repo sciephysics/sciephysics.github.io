@@ -1,84 +1,105 @@
-/* Import a technical but readable font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap');
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: #2d3436;
-    line-height: 1.6;
-    background-color: #fcfcfc;
+/* Custom Palette */
+:root {
+  --kyanos-red: #5F2E31;
+  --kyanos-light: #fdfcfc;
+  --text-main: #1a1a1a;
+  --text-muted: #555;
 }
 
-/* Hero Section (Solana Template) */
+/* Typography & Layout */
+h2 {
+  color: var(--kyanos-red);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 #hero-heading {
-    padding-top: 3rem;
-    max-width: 900px;
-    margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.about-entity {
-    border-bottom: 2px solid #edf2f7;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
+/* Button Styling */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-weight: 500;
+  margin: 10px;
+  transition: all 0.3s ease;
 }
 
-.about-image {
-    border-radius: 12px !important; /* Soften the corners */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+.btn-primary {
+  background-color: var(--kyanos-red);
+  color: white !important;
 }
 
-/* Contact Heading */
-h1#contact {
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: #0984e3; /* Science Blue */
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+.btn-secondary {
+  border: 1px solid var(--kyanos-red);
+  color: var(--kyanos-red) !important;
 }
 
-/* Typography Improvements */
-h2, h3 {
-    color: #2d3436;
-    font-weight: 600;
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(95, 46, 49, 0.3);
 }
 
-/* Creating the "Card" layout for Pillars */
-.pillars-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 2rem;
+/* Grid & Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.pillar-card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #e1e8ed;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-top: 3px solid var(--kyanos-red);
+  border-radius: 0 0 8px 8px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.pillar-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.05);
-    border-color: #0984e3;
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-top-width: 6px;
 }
 
-.pillar-card h3 {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: #0984e3;
-    font-family: 'JetBrains Mono', monospace;
+.card strong {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--kyanos-red);
+  margin-bottom: 0.5rem;
 }
 
-/* Links/Buttons */
-.about-links .btn {
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s;
+/* Call to Action Section */
+.community-section {
+  background: var(--kyanos-light);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #f0e6e6;
+  margin-top: 4rem;
 }
 
-.about-links .btn-outline-primary:hover {
-    background-color: #0984e3;
-    border-color: #0984e3;
+/* Social Links Overrides */
+.about-links {
+  justify-content: center !important;
+  gap: 15px;
+}
+
+.about-link {
+  border: 1px solid #ddd !important;
+  border-radius: 50px !important;
+  padding: 8px 20px !important;
+  color: var(--text-muted) !important;
+}
+
+.about-link:hover {
+  background-color: var(--kyanos-red) !important;
+  color: white !important;
+  border-color: var(--kyanos-red) !important;
 }

@@ -4,14 +4,14 @@
     "href": "submission.html",
     "title": "Guideline",
     "section": "",
-    "text": "Hello and welcome — we’re delighted you’re considering submitting to Kyanos! We accept a wide range of article types across Physics, Chemistry, Biology, Mathematics, Computer Science, and related areas. Submissions can include:\nWe bring students together across campuses, cities, and countries to share projects, learn collaboratively, and encourage emerging investigators who are excited to explore new fields."
+    "text": "These are engineering- or experiment-based submissions. We look for:\n\nProblem-solving projects that address a clear niche (e.g., “A Low-Cost Mesh Network for Campus Emergency Alerts”).\nFailure analyses and negative results that include data and lessons learned.\nReproducibility: documentation, materials, and files sufficient for others to reproduce the work."
   },
   {
     "objectID": "submission.html#researchproject",
     "href": "submission.html#researchproject",
     "title": "Guideline",
-    "section": "Research/Project",
-    "text": "Research/Project\nThese are engineering- or experiment-based submissions. We look for:\n\nProblem-solving projects that address a clear niche (e.g., “A Low-Cost Mesh Network for Campus Emergency Alerts”).\nFailure analyses and negative results that include data and lessons learned.\nReproducibility: documentation, materials, and files sufficient for others to reproduce the work."
+    "section": "",
+    "text": "These are engineering- or experiment-based submissions. We look for:\n\nProblem-solving projects that address a clear niche (e.g., “A Low-Cost Mesh Network for Campus Emergency Alerts”).\nFailure analyses and negative results that include data and lessons learned.\nReproducibility: documentation, materials, and files sufficient for others to reproduce the work."
   },
   {
     "objectID": "submission.html#theories",
@@ -37,16 +37,30 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Our Story",
+    "title": "Empowering Student Research",
     "section": "",
-    "text": "SCIE\n  \n\n      \n\n\nPlease use the following email to contact SCIE(NCE): contact@kyanos.pub\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\n\n\n\n\n\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\n\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\n\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
+    "text": "SCIE Campus\n  \n  \n    \n     contact@kyanos.pub\n  \n\n      \n\n\nKyanos is more than a journal; it is a bridge between classroom learning and professional inquiry. We provide a platform for students to step out of the prescribed curriculum and into the role of the investigator.\nWhether you are deciphering complex fluid dynamics or building your first neural network, we want to see your process.\nSubmission Guildeline Submit Your Work"
   },
   {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "Our Story",
+    "objectID": "about.html#beyond-the-syllabus.",
+    "href": "about.html#beyond-the-syllabus.",
+    "title": "Empowering Student Research",
     "section": "",
-    "text": "Please use the following email to contact SCIE(NCE): contact@kyanos.pub\nSCIE(NCE) is a student-led, open-access platform dedicated to bridging the gap between classroom learning and professional scientific discovery.\n\n\n\n\n\n\nAdvanced Insights Deep dives into physics, biology, and chemistry, translating high-level concepts into understandable, rigorous content.\n\n\n\nEngineering & Innovation Showcasing student-built hardware, software solutions, and experimental prototypes that solve real-world problems.\n\n\n\nKnowledge Sharing Peer-curated academic notes designed to help fellow students master the most challenging aspects of the curriculum.\n\n\nInterested in joining our team or submitting your work? Check our submission guidelines."
+    "text": "Kyanos is more than a journal; it is a bridge between classroom learning and professional inquiry. We provide a platform for students to step out of the prescribed curriculum and into the role of the investigator.\nWhether you are deciphering complex fluid dynamics or building your first neural network, we want to see your process.\nSubmission Guildeline Submit Your Work"
+  },
+  {
+    "objectID": "about.html#what-we-publish",
+    "href": "about.html#what-we-publish",
+    "title": "Empowering Student Research",
+    "section": "What We Publish",
+    "text": "What We Publish\nWe accept a diverse range of submissions across Physics, Chemistry, Biology, Mathematics, and Computer Science.\n\n\nPure & Theoretical Inquiry\n\n\nFormal Research Full-length papers that adhere to academic rigorous standards and peer-review logic.\n\n\nTheoretical Sketches Ideas that push beyond IGCSE/A-Level/IB boundaries—mathematically-driven physics is highly encouraged.\n\n\nMathematical Modelling The application of abstract mathematics to solve real-world or theoretical problems.\n\n\n\n\nApplied Science & Engineering\n\n\nExperimental Reports Carefully designed lab experiments that test a hypothesis or verify a phenomenon.\n\n\nEngineering Projects Hardware prototypes, structural designs, or physical solutions to modern challenges.\n\n\nShort Insights Focused research highlights that provide a singular, high-impact realization.\n\n\n\n\nDigital & Computational Frontiers\n\n\nSoftware & Programming Code-based projects, algorithm development, or innovative software tools.\n\n\nThe “Open” Category Have a unique interdisciplinary project? If it involves research or application, we want to see it."
+  },
+  {
+    "objectID": "about.html#join-a-global-community",
+    "href": "about.html#join-a-global-community",
+    "title": "Empowering Student Research",
+    "section": "Join a Global Community",
+    "text": "Join a Global Community\nKyanos brings together emerging investigators across campuses and borders. We don’t just publish papers; we foster a culture of collaborative learning and intellectual curiosity.\nReady to share your story?\nGet in touch with the Editorial Team"
   },
   {
     "objectID": "articles/articles.html",

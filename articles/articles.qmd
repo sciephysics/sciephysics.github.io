@@ -1,4 +1,5 @@
 ---
+title: ""  # Empty title to remove the text
 listing:
   contents:
     - "*/*/*/*.qmd"
@@ -7,13 +8,61 @@ listing:
   type: default
   categories: true
   sort-ui: false
-  filter-ui: false
+  filter-ui: true 
+  fields: [date, title, author, image, description, categories]
 page-layout: full
-title-block-banner: true
+title-block-banner: false # Disable the banner to remove the top colored bar
 
 format:
   html:
     css: _articles.css
     body-classes: article-listing-page
+    include-after-body: 
+      text: |
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            // --- 1. Select Elements ---
+            const sidebar = document.querySelector('#quarto-margin-sidebar');
+            const searchBar = document.querySelector('.quarto-listing-filter');
+            const tagsSection = document.querySelector('.tag-cloud-wrapper');
+            const categoryTitle = document.querySelector('.quarto-listing-category-title');
+            const categoryList = document.querySelector('.quarto-listing-category');
+
+            // --- 2. Move Search Bar to Top of Sidebar ---
+            if (sidebar && searchBar) {
+              sidebar.insertBefore(searchBar, sidebar.firstChild);
+              
+              // Create "Search" Label
+              const label = document.createElement('h5');
+              label.className = 'sidebar-label search-label'; 
+              label.innerText = 'Search';
+              sidebar.insertBefore(label, searchBar);
+            }
+
+            // --- 3. Enable Collapsible Categories (Accordion) ---
+            if (categoryTitle && categoryList) {
+              categoryTitle.classList.add('collapsible-trigger');
+              
+              // Click Listener to toggle fold
+              categoryTitle.addEventListener('click', function() {
+                categoryList.classList.toggle('collapsed');
+                categoryTitle.classList.toggle('active');
+              });
+            }
+
+            // --- 4. Move Tags Section to Bottom of Sidebar ---
+            if (sidebar && tagsSection) {
+              sidebar.appendChild(tagsSection);
+            }
+          });
+        </script>
 ---
 
+::: {.tag-cloud-wrapper}
+### Popular Tags
+[Machine Learning](#category=Machine%20Learning){.tag-pill}
+[Biology](#category=Biology){.tag-pill}
+[Physics](#category=Physics){.tag-pill}
+[Engineering](#category=Engineering){.tag-pill}
+[Chemistry](#category=Chemistry){.tag-pill}
+:::

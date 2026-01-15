@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
@@ -99,6 +99,15 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-51S4JPCCYV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+
+  gtag('config', 'G-51S4JPCCYV');
+</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -137,7 +146,7 @@ window.Quarto = {
 <body class="nav-fixed article-listing-page quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -177,22 +186,32 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QWVyb2R5bmFtaWNz">Aerodynamics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGh5c2ljcw==">Physics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU1JUI3JUE1JUU3JUE4JThC">工程 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUU3JTg5JUE5JUU4JTgxJTk0JUU3JUJEJTkx">物联网 <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<section id="popular-tags" class="level3 tag-cloud-wrapper">
+<h3 class="anchored" data-anchor-id="popular-tags">Popular Tags</h3>
+<p><a href="#category=Machine%20Learning" class="tag-pill">Machine Learning</a> <a href="#category=Biology" class="tag-pill">Biology</a> <a href="#category=Physics" class="tag-pill">Physics</a> <a href="#category=Engineering" class="tag-pill">Engineering</a> <a href="#category=Chemistry" class="tag-pill">Chemistry</a></p>
+</section>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="UGh5c2ljcyUyQ0Flcm9keW5hbWljcw==" data-listing-date-sort="1766073600000" data-listing-file-modified-sort="1766517666875" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
 <div class="thumbnail"><a href="../articles/research/mars_airfoil/page/index.html" class="no-external">
@@ -204,9 +223,6 @@ window.Quarto = {
 <h3 class="no-anchor listing-title">
 <a href="../articles/research/mars_airfoil/page/index.html" class="no-external">Martian Airfoil Design</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../articles/research/mars_airfoil/page/index.html" class="no-external">A Short Subtitle</a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
@@ -239,9 +255,6 @@ Justin
 <h3 class="no-anchor listing-title">
 <a href="../articles/projects/weather-station/iot-weather-station.html" class="no-external">基于 ESP32 的校园微型气象站</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../articles/projects/weather-station/iot-weather-station.html" class="no-external"></a>
-</div>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUU1JUI3JUE1JUU3JUE4JThC'); return false;">工程</div>
@@ -687,6 +700,43 @@ Dec 15, 2025
     </div>
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // --- 1. Select Elements ---
+    const sidebar = document.querySelector('#quarto-margin-sidebar');
+    const searchBar = document.querySelector('.quarto-listing-filter');
+    const tagsSection = document.querySelector('.tag-cloud-wrapper');
+    const categoryTitle = document.querySelector('.quarto-listing-category-title');
+    const categoryList = document.querySelector('.quarto-listing-category');
+
+    // --- 2. Move Search Bar to Top of Sidebar ---
+    if (sidebar && searchBar) {
+      sidebar.insertBefore(searchBar, sidebar.firstChild);
+
+      // Create "Search" Label
+      const label = document.createElement('h5');
+      label.className = 'sidebar-label search-label';
+      label.innerText = 'Search';
+      sidebar.insertBefore(label, searchBar);
+    }
+
+    // --- 3. Enable Collapsible Categories (Accordion) ---
+    if (categoryTitle && categoryList) {
+      categoryTitle.classList.add('collapsible-trigger');
+
+      // Click Listener to toggle fold
+      categoryTitle.addEventListener('click', function() {
+        categoryList.classList.toggle('collapsed');
+        categoryTitle.classList.toggle('active');
+      });
+    }
+
+    // --- 4. Move Tags Section to Bottom of Sidebar ---
+    if (sidebar && tagsSection) {
+      sidebar.appendChild(tagsSection);
+    }
+  });
+</script>
 
 
 

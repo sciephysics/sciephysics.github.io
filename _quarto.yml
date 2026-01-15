@@ -33,4 +33,5 @@ format:
     mainfont: "Inter, system-ui, sans-serif" # 使用更现代的无衬线字体
     fontsize: "0.95rem"
     toc: false # 首页通常不需要目录，浪费空间
+    include-in-header: analytics.html
 

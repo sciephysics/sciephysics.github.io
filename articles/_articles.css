@@ -1,204 +1,261 @@
 /* ==========================================================================
-   _articles.css - 2025 Professional Editorial Layout (Wide Sidebar Edition)
-   Namespace: .article-listing-page
-   Focus: Wide Category Names, Anti-Overflow, High Specificity
+   _articles.css - JEI Replica (Full Sidebar Layout)
    ========================================================================== */
 
-/* 1. 核心变量定义 */
-.article-listing-page {
-  --brand: #5F2E31;
-  --text-main: #1a1a1a;
-  --text-muted: #64748b;
-  --bg-subtle: #f8fafc;
-  --border-light: #f1f5f9;
-  --shadow-hover: 0 12px 24px -6px rgba(0,0,0,0.06);
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --font-mono: "JetBrains Mono", "Roboto Mono", monospace;
-  /* 侧边栏宽度变量，方便统一修改 */
-  --sidebar-width: 380px; 
-}
-
-/* 2. 页面容器：强制镇压全局样式，消除溢出 */
-body.article-listing-page {
-  overflow-x: hidden !important;
-}
-
+/* 1. LAYOUT RESET: Force Sidebar Left, Content Right */
 body.article-listing-page #quarto-content {
-  max-width: 1400px !important; /* 略微增加总宽度以容纳更宽的侧边栏 */
-  margin: 0 auto !important;
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 4rem !important;
-  padding: 3rem 1.5rem !important;
-  box-sizing: border-box !important;
-}
-
-/* 列表主容器重置 */
-body.article-listing-page .quarto-listing-container-default {
-  flex: 1 !important;
-  margin: 0 !important;
-  max-width: none !important;
-  display: block !important;
-}
-
-/* 3. 侧边栏：加宽处理并修复长文本溢出 */
-body.article-listing-page .sidebar-wrapper {
-  flex: 0 0 var(--sidebar-width) !important; /* 宽度增加到 380px */
-  min-width: var(--sidebar-width) !important;
-  position: sticky !important;
-  top: 40px;
-  height: fit-content;
-  background: #ffffff;
-  padding: 0 !important;
-  border: none !important;
-  overflow-x: hidden !important;
-  box-sizing: border-box !important;
-}
-
-/* 搜索框美化 */
-body.article-listing-page .quarto-listing-filter-ui {
-  margin-bottom: 2.5rem !important;
-  border-bottom: 1px solid var(--border-light) !important;
-  padding: 0 0.5rem 1rem 0.5rem !important;
-}
-
-body.article-listing-page .quarto-listing-filter-ui input.search {
-  border: none !important;
-  padding: 0.5rem 0 !important;
-  background: transparent !important;
-  font-size: 1rem;
-  width: 100% !important;
-  box-shadow: none !important;
-}
-
-/* 分类标题：奢侈品排版 */
-body.article-listing-page .quarto-listing-category-title {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.8rem !important;
-  font-weight: 700 !important;
-  color: var(--brand);
-  margin: 0 0 1.5rem 0.5rem !important;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* 分类项：支持超长文本 */
-body.article-listing-page .quarto-listing-category .category {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 0.9rem 0.8rem !important; /* 增加内边距 */
-  border-bottom: 1px solid var(--border-light) !important;
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  text-decoration: none !important;
-  transition: var(--transition) !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-  /* 解决 Environmental Science 等长词换行问题 */
-  white-space: normal !important; 
-  word-break: break-word !important; 
-  line-height: 1.4 !important;
-}
-
-body.article-listing-page .quarto-listing-category .category:hover {
-  color: var(--brand) !important;
-  padding-left: 1.5rem !important; /* 悬浮时向右平移的视觉感 */
-  background-color: var(--bg-subtle) !important;
-}
-
-/* 计数器：专业感 */
-body.article-listing-page .quarto-category-count {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  background: var(--bg-subtle);
-  padding: 2px 8px;
-  border-radius: 4px;
-  flex-shrink: 0; /* 确保数字永远不被压缩 */
-  margin-left: 1.5rem;
-}
-
-/* 4. 文章卡片美化 */
-body.article-listing-page .quarto-post {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 2.5rem !important;
-  padding: 2.5rem 0 !important;
-  border-bottom: 1px solid var(--border-light) !important;
-  transition: var(--transition);
-  align-items: flex-start !important;
-}
-
-body.article-listing-page .quarto-post:hover {
-  border-bottom-color: var(--brand) !important;
-}
-
-/* 缩略图 */
-body.article-listing-page .thumbnail {
-  flex: 0 0 320px !important;
-  height: 200px !important;
-  overflow: hidden !important;
-  border-radius: 4px;
-  box-sizing: border-box !important;
-}
-
-body.article-listing-page .thumbnail img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1) !important;
-}
-
-body.article-listing-page .quarto-post:hover .thumbnail img {
-  transform: scale(1.08);
-}
-
-/* 内容区域 */
-body.article-listing-page .listing-title {
-  font-size: 1.75rem !important;
-  font-weight: 800 !important;
-  color: var(--text-main) !important;
-  line-height: 1.1 !important;
-  margin: 0 0 1rem 0 !important;
-  text-decoration: none !important;
-  letter-spacing: -0.02em;
-}
-
-body.article-listing-page .listing-excerpt {
-  color: var(--text-muted) !important;
-  font-size: 1rem !important;
-  line-height: 1.7 !important;
-  max-width: 55ch !important;
-  margin-bottom: 0 !important;
-}
-
-/* 5. 响应式布局：手机端自动取消加宽 */
-@media (max-width: 1100px) {
-  body.article-listing-page #quarto-content {
-    flex-direction: column !important;
+    display: grid !important;
+    /* Sidebar (300px) | Gap | Content */
+    grid-template-columns: 300px 1fr !important; 
     gap: 3rem !important;
-    padding: 2rem 1.25rem !important;
-  }
-  body.article-listing-page .sidebar-wrapper {
-    flex: none !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    position: static !important;
-  }
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 3rem 1.5rem !important;
 }
 
-@media (max-width: 768px) {
-  body.article-listing-page .quarto-post {
-    flex-direction: column !important;
-    gap: 1.5rem !important;
-    padding: 2rem 0 !important;
-  }
-  body.article-listing-page .thumbnail {
-    flex: none !important;
+/* Hide the Page Title Block completely */
+body.article-listing-page #title-block-header {
+    display: none !important;
+}
+
+/* 2. SIDEBAR STYLING */
+#quarto-margin-sidebar {
+    grid-column: 1 / 2 !important;
+    grid-row: 1 / 2 !important;
+    display: block !important;
+    padding-right: 1.5rem;
+    border-right: 1px solid #f1f5f9; /* Subtle divider line */
+}
+
+/* Hide default 'On this page' navigation */
+#quarto-margin-sidebar > nav {
+    display: none;
+}
+
+/* 3. MAIN CONTENT STYLING */
+main.content {
+    grid-column: 2 / 3 !important;
+    grid-row: 1 / 2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+/* 4. SEARCH BAR STYLING */
+.sidebar-label {
+    margin-top: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5F2E31; /* Brand Color */
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.quarto-listing-filter input.search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: #f8fafc;
+    margin-bottom: 2rem; /* Space between Search and Categories */
+}
+
+.quarto-listing-filter input.search:focus {
+    border-color: #5F2E31;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Hide the default search icon container to keep it clean */
+.quarto-listing-filter .input-group-text {
+    display: none; 
+}
+
+/* 5. COLLAPSIBLE CATEGORIES (Accordion) */
+.quarto-listing-category-title {
+    margin-top: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5F2E31;
+    letter-spacing: 0.05em;
+    padding: 10px 0;
+    cursor: pointer; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+/* Chevron Arrow */
+.quarto-listing-category-title::after {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    border-right: 2px solid #5F2E31;
+    border-bottom: 2px solid #5F2E31;
+    transform: rotate(45deg); /* Pointing Down (Open) */
+    transition: transform 0.3s ease;
+    margin-right: 5px;
+}
+
+/* Rotate Arrow when Folded */
+.quarto-listing-category-title.active::after {
+    transform: rotate(-135deg); /* Pointing Up/Folded */
+}
+
+/* The Category List Container - Animation */
+.quarto-listing-category {
+    overflow: hidden;
+    max-height: 1000px; /* Max height for open state */
+    opacity: 1;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s, margin 0.3s;
+    margin-bottom: 0; 
+}
+
+/* The Hidden State */
+.quarto-listing-category.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+/* Category Checkbox Items */
+.quarto-listing-category .category {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    color: #475569;
+    text-decoration: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Fake Checkbox Box */
+.quarto-listing-category .category::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 3px;
+    margin-right: 10px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.quarto-listing-category .category:hover { color: #5F2E31; }
+.quarto-listing-category .category:hover::before { border-color: #5F2E31; }
+.quarto-listing-category .category.active::before {
+    background-color: #5F2E31;
+    border-color: #5F2E31;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 6. POPULAR TAGS (Sidebar) */
+.tag-cloud-wrapper {
+    margin-top: 2.5rem; /* Space between Categories and Tags */
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.tag-cloud-wrapper h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5F2E31;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.tag-cloud-wrapper p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+    margin: 0;
+}
+
+.tag-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 6px 12px;
+    border-radius: 99px; /* Pill shape */
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.tag-pill:hover {
+    background: #5F2E31;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* 7. RESPONSIVE (Mobile) */
+@media (max-width: 900px) {
+    body.article-listing-page #quarto-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2rem !important;
+    }
+    
+    #quarto-margin-sidebar {
+        border-right: none !important;
+        padding-right: 0 !important;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 2rem;
+    }
+    
+    /* On mobile, maybe hide the tags to save space? */
+    .tag-cloud-wrapper {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   7. STANDARDIZED THUMBNAILS (Fixing Image Sizes)
+   ========================================================================== */
+
+/* 1. Force the thumbnail container to a fixed rigid box */
+.quarto-post .thumbnail {
+    /* Sets the width of the image column */
+    flex: 0 0 250px !important; 
+    width: 250px !important;
+    
+    /* Sets the standardized height for ALL images */
+    height: 160px !important;
+    
+    overflow: hidden; /* Hides any part of the image that sticks out */
+    border-radius: 6px; /* Optional: adds subtle rounded corners like JEI */
+    margin-right: 2rem; /* Consistent spacing between image and text */
+}
+
+/* 2. "Smart Crop" the image to fill that box */
+.quarto-post .thumbnail img {
     width: 100% !important;
-    height: 220px !important;
-  }
+    height: 100% !important;
+    
+    /* This is the magic property: */
+    object-fit: cover !important; 
+    object-position: center !important; /* Centers the subject */
+    
+    /* Smooth hover animation */
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 3. Optional: Subtle zoom effect when hovering the article */
+.quarto-post:hover .thumbnail img {
+    transform: scale(1.08);
 }
